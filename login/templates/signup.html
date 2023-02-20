@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup</title>
+        <link type="text/css" rel="stylesheet" href="/stylesheets/main.css">
+    </head>
+    <body>
+        <h1>Signup</h1>
+        <form method="post">
+            <label>
+                Username
+                <input type="text" name="username" value="{{username}}">
+                <span class="error">{{invalid_username}}</span>
+            </label>
+            <label>
+                Password
+                <input type="password" name="password">
+                <span class="error">{{invalid_password}}</span>
+            </label>
+            <label>
+                Verify Password 
+                <input type="password" name="verify">
+                <span class="error">{{invalid_verify}}</span>
+            </label>
+            <label>
+                Email (optional)
+                <input type="email" name="email">
+                <span class="error">{{invalid_email}}</span>
+            </label>
+            <input type="submit">
+        </form>
+    </body>
+</html>

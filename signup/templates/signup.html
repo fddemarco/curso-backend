@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Signup</title>
+    </head>
+    <body>
+        <h1 style="background-color: #ddd; color: #888; margin: 0; height: 50px;">
+            Signup</h1>
+
+        <form method="post">
+            Username <input type="text" name="username" value="{{usrn}}" required>
+                <span style="color: red">{{usrn_error}}</span><br>
+            Password <input type="password" name="password" required>
+                <span style="color: red">{{password_error}}</span><br>
+            Verify Password <input type="password" name="verify" required>
+                <span style="color: red">{{verify_error}}</span><br> 
+            Email (optional) <input type="email" name="email" optional>
+                <span style="color: red">{{email_error}}</span><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
